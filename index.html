@@ -11,7 +11,7 @@
   <!-- model viewer -->
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
   <title>
-    CoCoCo
+    SENORITA
   </title>
   <style>
   /* 样式用来布局表格和标签 */
@@ -47,18 +47,19 @@
 
     
     <!-- paper title -->
-    <p class="title is-3"> CoCoCo: Improving Text-Guided Video Inpainting for Better Consistency, Controllability and Compatibility </p>
+    <p class="title is-3"> Señorita-2M: A High-Quality Instruction-based Dataset for General Video Editing by Video Specialists </p>
     <!-- authors -->
     <p class="title is-5 mt-2"> 
       <a href="https://zibojia.github.io/" target="_blank">Bojia Zi</a><sup>1</sup>, 
-      <a href="https://shihaozhaozsh.github.io/" target="_blank">Shihao Zhao</a><sup>2</sup>, 
-      <a href="https://scholar.google.com/citations?user=odjSydQAAAAJ&hl=zh-CN" target="_blank">Xianbiao Qi</a><sup>*4</sup>, 
-      <a href="https://scholar.google.com/citations?user=mt5mvZ8AAAAJ&hl=en" target="_blank">Jianan Wang</a><sup>4</sup>,
-      <a href="https://openreview.net/profile?id=~Yukai_Shi3" target="_blank">Yukai Shi</a><sup>3</sup>,
-      <a href="https://github.com/qyc-98" target="_blank">Qianyu Chen</a><sup>1</sup>,
-      <a href="https://scholar.google.com/citations?hl=zh-CN&authuser=1&user=djpQeLEAAAAJ" target="_blank">Bin Liang</a><sup>1</sup>,
-      <a href="https://scholar.google.com/citations?hl=en&user=fyMni2cAAAAJ" target="_blank">Kam-Fai Wong</a><sup>1</sup>,
-      <a href="https://scholar.google.com/citations?hl=en&user=fIlGZToAAAAJ" target="_blank">Lei Zhang</a><sup>4</sup>
+      <a href="https://shihaozhaozsh.github.io/" target="_blank">Penghui Ruan</a><sup>2</sup>, 
+      <a href="https://scholar.google.com/citations?user=odjSydQAAAAJ&hl=zh-CN" target="_blank">Marco Chen</a><sup>*4</sup>, 
+      <a href="https://scholar.google.com/citations?user=mt5mvZ8AAAAJ&hl=en" target="_blank">Xianbiao Qi</a><sup>4</sup>,
+      <a href="https://openreview.net/profile?id=~Yukai_Shi3" target="_blank">Shaozhe Hao</a><sup>3</sup>,
+      <a href="https://github.com/qyc-98" target="_blank">Shihao Zhao</a><sup>1</sup>,
+      <a href="https://scholar.google.com/citations?hl=zh-CN&authuser=1&user=djpQeLEAAAAJ" target="_blank">Youze Huang</a><sup>1</sup>,
+      <a href="https://scholar.google.com/citations?hl=en&user=fyMni2cAAAAJ" target="_blank">Bin Liang</a><sup>1</sup>,
+      <a href="https://scholar.google.com/citations?hl=en&user=fIlGZToAAAAJ" target="_blank">Rong Xiao</a><sup>4</sup>
+      <a href="https://scholar.google.com/citations?hl=en&user=fIlGZToAAAAJ" target="_blank">Kam-Fai Wong</a><sup>4</sup>
     </p>
     <!-- affiliations -->
     <p class="subtitle is-5"> 
@@ -74,158 +75,15 @@
     <!-- other links -->
     <div class="is-flex is-justify-content-center">
       <span class="icon-text mx-1">
-        <a class="button is-dark" href="https://arxiv.org/abs/2403.12035" role="button" target="_blank"> <span class="icon"> <ion-icon name="document-outline"></ion-icon> </span> <span> Arxiv </span>  </a> 
+        <a class="button is-dark" href="https://arxiv.org/abs/2502.06734" role="button" target="_blank"> <span class="icon"> <ion-icon name="document-outline"></ion-icon> </span> <span> Arxiv </span>  </a> 
       </span>
       <span class="icon-text mx-1">
-        <a class="button is-dark" href="https://github.com/zibojia/COCOCO" role="button" target="_blank"> <span class="icon"> <ion-icon name="logo-github"></ion-icon> </span> <span> Code </span> </a> 
+        <a class="button is-dark" href="https://github.com/zibojia/SENORITA" role="button" target="_blank"> <span class="icon"> <ion-icon name="logo-github"></ion-icon> </span> <span> Code </span> </a> 
       </span>
     </div>
    
   </div>
 
-  <!-- main container -->
-  <div class="container is-max-desktop has-text-centered">
-
-    <!-- abstract -->
-    <p class="title is-3 mt-5 has-text-centered"> Abstract </p>
-    <p class="content is-size-6 has-text-left">
-Recent advancements in video generation have been remarkable, yet many existing methods struggle with issues of consistency and poor text-video alignment. Moreover, the field lacks effective techniques for text-guided video inpainting, a stark contrast to the well-explored domain of text-guided image inpainting. To this end, this paper proposes a novel text-guided video inpainting model that achieves better consistency, controllability and compatibility. Specifically, we introduce a simple but efficient motion capture module to preserve motion consistency, and design an instance-aware region selection instead of a random region selection to obtain better textual controllability, and utilize a novel strategy to inject some personalized models into our CoCoCo model and thus obtain better model compatibility. Extensive experiments show that our model can generate high-quality video clips. Meanwhile, our model shows better motion consistency, textual controllability and model compatibility.    </p>
-
-<table>
-    <tr>
-    <td><img src="images/sea_org.gif", style="width: 92.5%;"></td>
-    <td><img src="images/sea1.gif", style="width: 92.5%;"></td>
-    <td><img src="images/sea2.gif", style="width: 92.5%;"></td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-    <td><img src="images/river_org.gif", style="width: 92.5%;"></td>
-    <td><img src="images/river1.gif", style="width: 92.5%;"></td>
-    <td><img src="images/river2.gif", style="width: 92.5%;"></td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-    <td><img src="images/sunrise_org.gif", style="width: 92.5%;"></td>
-    <td><img src="images/sunrise1.gif", style="width: 92.5%;"></td>
-    <td><img src="images/sunrise2.gif", style="width: 92.5%;"></td>
-    </tr>
-</table>
-    
-<table>
-    <tr>
-    <td><img src="images/sky_org.gif", style="width: 92.5%;"></td>
-    <td><img src="images/sky1.gif", style="width: 92.5%;"></td>
-    <td><img src="images/sky2.gif", style="width: 92.5%;"></td>
-    </tr>
-</table>
-    
-    <p class="title is-size-4 mt-5 has-text-centered"> Motion Capture Module </p>
-    <p class="content has-text-centered is-size-6">
-      We propose a novel motion capture module. It consists of three types attention block, including two previously used temporal attention layers, a newly introduced damped global attention layer and a textual cross attention layer. The new motion capture module can enable the model to have better motion consistency and text-video controllability.
-    </p>
-    <img src="./images/image1.png" alt="Description of the image" width="500">
-    <img src="./images/image2.png" alt="Description of the image" width="500">
-
-
-    <p class="title is-size-4 mt-5 has-text-centered"> Instance-Aware Region Selection </p>
-    <p class="content has-text-centered is-size-6">
-      We design a new instance-aware region selection strategy instead of a random mask selection strategy used in previous method. The new strategy can help the model achieve better text-video controllability.
-    </p>
-    <img src="./images/image3.png" alt="Description of the image" width="500">
-
-    <p class="title is-size-4 mt-5 has-text-centered">T2I Model for Video Inpainting</p>
-
-        <table>
-    <tr>
-    <td><img src="images/gibuli_lora_org.gif", style="width: 92.5%;"></td>
-    <td><img src="images/gibuli_merged1.gif", style="width: 92.5%;"></td>
-    <td><img src="images/gibuli_merged2.gif", style="width: 92.5%;"></td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-    <td><img src="images/unmbrella_org.gif", style="width: 92.5%;"></td>
-    <td><img src="images/unmbrella1.gif", style="width: 92.5%;"></td>
-    <td><img src="images/unmbrella2.gif", style="width: 92.5%;"></td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-    <td><img src="images/gibuli.gif", style="width: 92.5%;"></td>
-    <td><img src="images/bocchi1.gif", style="width: 92.5%;"></td>
-    <td><img src="images/bocchi2.gif", style="width: 92.5%;"></td>
-    </tr>
-</table>
-    
-    <p class="content has-text-centered is-size-6">
-     We introduce a novel strategy to transform some personalized generation models, and then plug them into our our text-guided video inpainting model. This strategy can enhance the compatibility of our model.
-    </p>
-    <img src="./images/image4.png" alt="Description of the image" width="500">
-
-
-<p class="title is-size-4 mt-5 has-text-centered"> Experiment </p>
-
-  We compare our COCOCO with AVID by using same video samples.
-
-<div class="table-container">
-  <div class="label-column">
-    <p>Original</p>
-  </div>
-  <div class="content-column">
-<table>
-    <tr>
-    <td><img src="images/image_mask1.gif", style="width: 75.5%;"></td>
-    <td><img src="images/image_mask2.gif", style="width: 75.5%;"></td>
-    <td><img src="images/image_mask3.gif", style="width: 75.5%;"></td>
-    </tr>
-</table>
-</div>
-</div>
-
-<div class="table-container">
-  <div class="label-column">
-    <p>AVID</p>
-  </div>
-  <div class="content-column">
-<table>
-    <tr>
-    <td><img src="images/avid1.gif", style="width: 75.5%;"></td>
-    <td><img src="images/avid2.gif", style="width: 75.5%;"></td>
-    <td><img src="images/avid3.gif", style="width: 75.5%;"></td>
-    </tr>
-</table>
-</div>
-</div>
-
-<div class="table-container">
-  <div class="label-column">
-    <p>COCOCO</p>
-  </div>
-  <div class="content-column">
-<table>
-    <tr>
-    <td><img src="images/cococo1.gif", style="width: 75.5%;"></td>
-    <td><img src="images/cococo2.gif", style="width: 75.5%;"></td>
-    <td><img src="images/cococo3.gif", style="width: 75.5%;"></td>
-    </tr>
-</table>
-<table>
-    <tr>
-    <td>A field of purple flowers</td>
-    <td>A car driving on the road</td>
-    <td>A can floating in the water</td>
-    </tr>
-</table>
-</div>
-</div>
-
-</div>
     
 <!-- citation -->
     <div class="card mt-4">
