@@ -37,6 +37,11 @@
     padding: 4px; /* 内边距 */
     text-align: left; /* 文字左对齐 */
   }
+  .gradient-text {
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* 设置渐变色 */
+  -webkit-background-clip: text; /* 将渐变应用到文字 */
+  color: transparent; /* 使文字本身透明 */
+}
 </style>
   <link rel="icon" href="icon.ico">
 </head>
@@ -46,7 +51,10 @@
   <div class="container has-text-centered">
 
     
-    <p class="title is-3" style="font-size: 36px;">Señorita-2M: A High-Quality Instruction-based Dataset for General Video Editing by Video Specialists</p>
+<p class="title is-3" style="font-size: 46px;">
+  <span class="gradient-text">Señorita-2M</span>: A High-Quality Instruction-based Dataset for General Video Editing by Video Specialists
+</p>
+
     <!-- authors -->
     <p class="title is-5 mt-2"> 
       <a href="https://zibojia.github.io/" target="_blank">Bojia Zi</a><sup>1</sup>, 
