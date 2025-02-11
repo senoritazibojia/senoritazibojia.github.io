@@ -84,37 +84,68 @@
     </p>
 
     <!-- other links -->
-<div class="is-flex is-justify-content-center">
-  <!-- Arxiv button with grey-black background and reduced size -->
-  <span class="icon-text mx-1">
-    <a class="button is-medium" href="https://arxiv.org/abs/2502.06734" role="button" target="_blank" style="background-color: #333333; color: white; border-radius: 5px; padding: 9.6px 19.2px;">
-      <span class="icon"> 
-        <img src="https://info.arxiv.org/assets/arxiv-logo-one-color-white.svg" alt="Arxiv Logo" style="height: 22.4px;">
-      </span> 
-      <span> arXiv </span>  
-    </a> 
-  </span>
+<div class="button-container" style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <!-- YouTube Button -->
+  <button onclick="window.location.href='https://youtu.be/oEQYStnF2l8'" style="background-color: #FF0000; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">
+    <img src="https://badges.aleen42.com/src/youtube.svg" alt="YouTube" style="height: 24px; margin-right: 10px;"> YouTube
+  </button>
 
-  <!-- GitHub button with grey-black background and reduced size -->
-  <span class="icon-text mx-1">
-    <a class="button is-medium" href="https://github.com/zibojia/SENORITA" role="button" target="_blank" style="background-color: #333333; color: white; border-radius: 5px; padding: 9.6px 19.2px;">
-      <span class="icon"> 
-        <ion-icon name="logo-github"></ion-icon> 
-      </span> 
-      <span> Code </span> 
-    </a> 
-  </span>
+  <!-- Colab Button 1 -->
+  <button onclick="window.location.href='https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/automated-dataset-annotation-and-evaluation-with-grounding-dino-and-sam.ipynb'" style="background-color: #FFDD00; color: black; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Colab" style="height: 24px; margin-right: 10px;"> Colab
+  </button>
 
-  <!-- Hugging Face button with grey-black background and reduced size -->
-  <span class="icon-text mx-1">
-    <a class="button is-medium" href="https://huggingface.co/datasets/SENORITADATASET/Senorita" role="button" target="_blank" style="background-color: #333333; color: white; border-radius: 5px; padding: 9.6px 19.2px;">
-      <span class="icon">
-        <img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.svg" alt="Hugging Face Logo" style="height: 22.4px;">
-      </span>
-      <span> Hugging Face </span> 
-    </a> 
-  </span>
+  <!-- Colab Button 2 -->
+  <button onclick="window.location.href='https://github.com/camenduru/grounded-segment-anything-colab'" style="background-color: #FFDD00; color: black; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="height: 24px; margin-right: 10px;"> Open in Colab
+  </button>
+
+  <!-- HuggingFace Space Button -->
+  <button onclick="window.location.href='https://huggingface.co/spaces/IDEA-Research/Grounded-SAM'" style="background-color: #00A9D3; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">
+    <img src="https://img.shields.io/badge/🤗-HuggingFace%20Space-cyan.svg" alt="HuggingFace Space" style="height: 24px; margin-right: 10px;"> HuggingFace Space
+  </button>
+
+  <!-- Replicate Button -->
+  <button onclick="window.location.href='https://replicate.com/cjwbw/grounded-recognize-anything'" style="background-color: #00A9D3; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">
+    <img src="https://replicate.com/cjwbw/grounded-recognize-anything/badge" alt="Replicate" style="height: 24px; margin-right: 10px;"> Replicate
+  </button>
+
+  <!-- ModelScope Official Demo Button -->
+  <button onclick="window.location.href='https://modelscope.cn/studios/tuofeilunhifi/Grounded-Segment-Anything/summary'" style="background-color: #FF4C4C; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">
+    <img src="https://img.shields.io/badge/ModelScope-Official%20Demo-important" alt="ModelScope Official Demo" style="height: 24px; margin-right: 10px;"> ModelScope Demo
+  </button>
+
+  <!-- Huggingface Demo by Community Button -->
+  <button onclick="window.location.href='https://huggingface.co/spaces/yizhangliu/Grounded-Segment-Anything'" style="background-color: #D24F2F; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">
+    <img src="https://img.shields.io/badge/Huggingface-Demo%20by%20Community-red" alt="Huggingface Demo by Community" style="height: 24px; margin-right: 10px;"> Huggingface Demo by Community
+  </button>
+
+  <!-- Stable-Diffusion WebUI Button -->
+  <button onclick="window.location.href='https://github.com/continue-revolution/sd-webui-segment-anything'" style="background-color: #FF6A00; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">
+    <img src="https://img.shields.io/badge/Stable--Diffusion-WebUI%20by%20Community-critical" alt="Stable-Diffusion WebUI" style="height: 24px; margin-right: 10px;"> Stable-Diffusion WebUI
+  </button>
+
+  <!-- Jupyter Notebook Demo Button -->
+  <button onclick="window.location.href='./grounded_sam.ipynb'" style="background-color: #4F93FF; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">
+    <img src="https://img.shields.io/badge/Demo-Jupyter%20Notebook-informational" alt="Jupyter Notebook Demo" style="height: 24px; margin-right: 10px;"> Jupyter Notebook Demo
+  </button>
+
+  <!-- GroundingDINO arXiv Button -->
+  <button onclick="window.location.href='https://arxiv.org/abs/2303.05499'" style="background-color: #0072B1; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">
+    <img src="https://img.shields.io/badge/GroundingDINO-arXiv-blue" alt="GroundingDINO arXiv" style="height: 24px; margin-right: 10px;"> GroundingDINO arXiv
+  </button>
+
+  <!-- Segment_Anything arXiv Button -->
+  <button onclick="window.location.href='https://arxiv.org/abs/2304.02643'" style="background-color: #0072B1; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">
+    <img src="https://img.shields.io/badge/Segment_Anything-arXiv-blue" alt="Segment_Anything arXiv" style="height: 24px; margin-right: 10px;"> Segment_Anything arXiv
+  </button>
+
+  <!-- Grounded_SAM arXiv Button -->
+  <button onclick="window.location.href='https://arxiv.org/abs/2401.14159'" style="background-color: #0072B1; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">
+    <img src="https://img.shields.io/badge/Grounded_SAM-arXiv-blue" alt="Grounded_SAM arXiv" style="height: 24px; margin-right: 10px;"> Grounded_SAM arXiv
+  </button>
 </div>
+
 
 
     
